@@ -60,6 +60,7 @@ function game(){
         console.log(`Scores:\nplayer: ${playerScore}\ncomputer: ${computerScore}`)
         if (i == 4){
             console.log(`Final Result: You ${winStatus}!`)
+            console.log(`Final Scores:\nplayer: ${playerScore}\ncomputer: ${computerScore}`)
         }
     }
 }
