@@ -1,5 +1,5 @@
 const choices = ["rock", "paper", "scissors"]
-const computerSelection = computerPlay()
+let computerSelection = ""
 let playerSelection = ""
 let winStatus = ""
 let playerScore = 0
@@ -46,6 +46,7 @@ function playRound(playerSelection, computerSelection){
 function game(){
     for (let i = 0; i < 5; i++){
         playerSelection = prompt("Please choose rock, paper, or scissors").toLowerCase()
+        computerSelection = computerPlay()
         playRound(playerSelection, computerSelection)
         if (winStatus === "win"){
             playerScore++
