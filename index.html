@@ -3,8 +3,58 @@
     <head>
         <title>Rock Paper Scissors</title>
         <meta charset="UTF-8">
+        <link rel="stylesheet" href="styles.css">
     </head>
     <body>
         <script src="main.js"></script>
+        <div class='header'>
+            <div class='leftHeader'>
+                <img src="images/logo.svg">
+            </div>
+            <div class='rightHeader'>
+                <div class='scoreBoard'>
+                    <p class='scoreTitle'>SCORE</p>
+                    <p class='scoreAmount'>0</p>
+                </div>
+            </div>
+        </div>
+        <div class='gameArea'>
+            <img src="images/bg-triangle.svg" class='backgroundTri'>
+            <div class='gameBtns'>
+                <div class='topSection'>
+                    <div class='paperBtn button'>
+                        <img src="images/icon-paper.svg" class='buttonImg'>
+                        <div class="bkgCircle main"></div>
+                        <div class="bkgCircle inner"></div>
+                        <div class="outerCircle main"></div>
+                        <div class="outerCircle inner"></div>
+                        <div class="hoverCircle"></div>
+                    </div>
+                    <div class='scissorsBtn button'>
+                        <img src="images/icon-scissors.svg" class='buttonImg'>
+                        <div class="bkgCircle main"></div>
+                        <div class="bkgCircle inner"></div>
+                        <div class="outerCircle main"></div>
+                        <div class="outerCircle inner"></div>
+                        <div class="hoverCircle"></div>
+                    </div>
+                </div>
+                <div class='bottomSection'>
+                    <div class='rockBtn button'>
+                        <img src="images/icon-rock.svg" class='buttonImg'>
+                        <div class="bkgCircle main"></div>
+                        <div class="bkgCircle inner"></div>
+                        <div class="outerCircle main"></div>
+                        <div class="outerCircle inner"></div>
+                        <div class="hoverCircle"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class='rulesArea'>
+            <button class='rulesBtn'>
+                RULES
+            </button>
+        </div>
     </body>
 </html>
