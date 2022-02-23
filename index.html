@@ -6,7 +6,17 @@
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>
-        <script src="main.js"></script>
+        <script src="main.js" defer></script>
+        <div class='rulesBkgDimmer rulesScreen'></div>
+        <div class='rulesModule rulesScreen'>
+            <div class='rulesBkg'>
+                <div class='rulesHeader'>
+                    <p class='rulesTitle'>RULES</p>
+                    <div class='closeButton'></div>
+                </div>
+                <img src="images/image-rules.svg" class='rulesImg'>
+            </div>
+        </div>
         <div class='header'>
             <div class='leftHeader'>
                 <img src="images/logo.svg">
@@ -19,34 +29,66 @@
             </div>
         </div>
         <div class='gameArea'>
-            <img src="images/bg-triangle.svg" class='backgroundTri'>
-            <div class='gameBtns'>
-                <div class='topSection'>
-                    <div class='paperBtn button'>
-                        <img src="images/icon-paper.svg" class='buttonImg'>
-                        <div class="bkgCircle main"></div>
-                        <div class="bkgCircle inner"></div>
-                        <div class="outerCircle main"></div>
-                        <div class="outerCircle inner"></div>
-                        <div class="hoverCircle"></div>
+            <div class='resultsScreen'>
+                <div class='bothResults'>
+                    <div class='playerSelection'>
+                        <div class='selectionTitle hidden'>YOU PICKED</div>
+                        <div class='playerSelectionBtn button hidden'>
+                            <img src="images/icon-paper.svg" class='buttonImg playerSelectionImg'>
+                            <div class="bkgCircle main"></div>
+                            <div class="bkgCircle inner"></div>
+                            <div class="outerCircle main"></div>
+                            <div class="outerCircle inner"></div>
+                            <div class="hoverCircle"></div>
+                        </div>
                     </div>
-                    <div class='scissorsBtn button'>
-                        <img src="images/icon-scissors.svg" class='buttonImg'>
-                        <div class="bkgCircle main"></div>
-                        <div class="bkgCircle inner"></div>
-                        <div class="outerCircle main"></div>
-                        <div class="outerCircle inner"></div>
-                        <div class="hoverCircle"></div>
+                    <div class='roundWinner'>
+                        <p class='whoWon hidden'>Blank Won</p>
+                        <button class='playAgainBtn hidden'>PLAY AGAIN</button>
+                    </div>
+                    <div class='computerSelection'>
+                        <div class='selectionTitle hidden'>THE COMPUTER PICKED</div>
+                        <div class='computerSelectionBtn button hidden'>
+                            <img src="images/icon-paper.svg" class='buttonImg computerSelectionImg'>
+                            <div class="bkgCircle main"></div>
+                            <div class="bkgCircle inner"></div>
+                            <div class="outerCircle main"></div>
+                            <div class="outerCircle inner"></div>
+                            <div class="hoverCircle"></div>
+                        </div>
                     </div>
                 </div>
-                <div class='bottomSection'>
-                    <div class='rockBtn button'>
-                        <img src="images/icon-rock.svg" class='buttonImg'>
-                        <div class="bkgCircle main"></div>
-                        <div class="bkgCircle inner"></div>
-                        <div class="outerCircle main"></div>
-                        <div class="outerCircle inner"></div>
-                        <div class="hoverCircle"></div>
+            </div>
+            <div class='playScreen'>
+                <img src="images/bg-triangle.svg" class='backgroundTri loading'>
+                <div class='gameBtns'>
+                    <div class='topSection'>
+                        <div class='paperBtn button loading'>
+                            <img src="images/icon-paper.svg" class='buttonImg'>
+                            <div class="bkgCircle main"></div>
+                            <div class="bkgCircle inner"></div>
+                            <div class="outerCircle main"></div>
+                            <div class="outerCircle inner"></div>
+                            <div class="hoverCircle"></div>
+                        </div>
+                        <div class='scissorsBtn button loading'>
+                            <img src="images/icon-scissors.svg" class='buttonImg'>
+                            <div class="bkgCircle main"></div>
+                            <div class="bkgCircle inner"></div>
+                            <div class="outerCircle main"></div>
+                            <div class="outerCircle inner"></div>
+                            <div class="hoverCircle"></div>
+                        </div>
+                    </div>
+                    <div class='bottomSection'>
+                        <div class='rockBtn button loading'>
+                            <img src="images/icon-rock.svg" class='buttonImg'>
+                            <div class="bkgCircle main"></div>
+                            <div class="bkgCircle inner"></div>
+                            <div class="outerCircle main"></div>
+                            <div class="outerCircle inner"></div>
+                            <div class="hoverCircle"></div>
+                        </div>
                     </div>
                 </div>
             </div>
