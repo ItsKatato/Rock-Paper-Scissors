@@ -213,7 +213,7 @@ playAgainBtn.addEventListener('click', () => {
                         item.classList.remove('animationOut');
                     })
                     bkgTri.classList.remove('animationOut');
-                  }, 10)
-              }, 10)
+                  }, 50)
+              }, 50)
           }, 1000)
 })
